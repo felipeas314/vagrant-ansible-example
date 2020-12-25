@@ -1,0 +1,12 @@
+---
+- hosts: all
+  tasks:
+    - name: Instalando o NGINX
+      apt:
+        name: nginx
+        state: latest
+      become: yes
+    - name: Iniciando o NGINX
+      service:
+        name: nginx
+        state: started
