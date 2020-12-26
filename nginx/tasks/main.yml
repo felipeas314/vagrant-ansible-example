@@ -1,0 +1,6 @@
+---
+- name: "Instalando o nginx"
+  apt:
+    name: nginx
+    state: latest
+  notify: start

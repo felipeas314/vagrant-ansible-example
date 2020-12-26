@@ -1,0 +1,6 @@
+---
+- name: start
+  service: 
+    name: nginx
+    enabled: yes
+    state: started
